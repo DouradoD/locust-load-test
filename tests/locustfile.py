@@ -3,6 +3,9 @@ from api.services.post_service import PostService
 from data.test_data import TestData
 
 class ApiUser(HttpUser):
+    # Specify the base host here
+    host = "https://jsonplaceholder.typicode.com"
+
     wait_time = between(1, 5)
 
     def on_start(self):
