@@ -1,2 +1,6 @@
 .venv
 .idea
+instance
+*.db
+
+**/__pycache__/**
