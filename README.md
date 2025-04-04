@@ -4,23 +4,22 @@ Archtecture - Data-Driven Testing
 
 ### Structure
 ```tests/
-├── api/
-│   ├── services/
-│   │   ├── post_service.py
-│   │   ├── user_service.py
-│   ├── endpoints/
-│   │   ├── post_endpoint.py
-│   │   ├── user_endpoint.py
-├── data/
-│   ├── test_data.py
-├── utils/
-│   ├── helpers.py
-├── locustfile.py
+├── tests/
+│   ├── api/
+│   │   ├── tests/
+│   │   │   ├── test_user.py
+│   │   ├── user.py
+│   ├── utils/
+│   │   ├── helpers.py
+│   ├── locustfile.py
+├── .gitignore
 ├── README.md
 ├── requirements.txt
 
 ```
-- api package - Service Objects - Encapsulate the APIs responsibility
-- data package - Static data store responsibility
+- api package - Responsible for store the Database/API and those API tests
+  - tests - Unit tests to cover the API
 - utils package - Utils functions and common actions
-- locustfile.py -  
+- locustfile.py -  Responsible for run the load test using the API user
+
+

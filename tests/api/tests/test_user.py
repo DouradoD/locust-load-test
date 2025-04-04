@@ -1,5 +1,5 @@
 import pytest
-from tests.api.user import app, db, User
+from tests.api.user import app, db
 import json
 
 
